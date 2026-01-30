@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Order food online from restaurants near you. Swiggy UI clone built using HTML, Tailwind CSS."
+    />
+    <meta name="author" content="Sanjith" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="./output.css" rel="stylesheet" />
+    <title>
+      Order Food & Groceries. Discover the best restaurants. Swiggy it!
+    </title>
+    <link
+      rel="icon"
+      sizes="192x192"
+      href="https://media-assets.swiggy.com/portal/m/logo_192x192.png"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://media-assets.swiggy.com/portal/m/logo_32x32.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://media-assets.swiggy.com/fl_lossy,f_auto,q_auto,w_96,h_96/portal/m/logo_192x192.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="https://media-assets.swiggy.com/fl_lossy,f_auto,q_auto,w_72,h_72/portal/m/logo_192x192.png"
+    />
+  </head>
+  <body class="text-sm font-swiggy min-w-[1200px]">
+    <!-- first page -->
+     
+    <section class="w-full bg-[#FF5200] relative overflow-hidden">
+      <div class="min-w-screen">
+        <!-- Nav section -->
+        <nav
+          class="flex justify-between items-center pt-9 text-white font-extrabold mx-[105px]"
+        >
+          <img
+            src="/Swiggy/src/assets/Swiggy_img/swiggy_logo_white.avif"
+            class="h-[48px] w-[160px] cursor-pointer"
+            alt=""
+          />
+          <div class="flex gap-5 items-center">
+            <span class="cursor-pointer">Swiggy Corporate</span>
+            <span class="cursor-pointer">Partner with us</span>
+            <button
+              class="border border-white px-[16px] py-[12px] flex rounded-xl gap-2 cursor-pointer"
+            >
+              Get the app
+              <svg
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+                fill="none"
+                aria-label="rating-up-down-icon"
+                aria-hidden="false"
+                strokecolor="#FFFFFF"
+                fillcolor="#FFFFFF"
+              >
+                <path
+                  d="M12.634 3.45a1 1 0 0 0-1.365 1.462l4.827 4.506c.238.221.44.41.614.577H2.996a1 1 0 0 0 0 2h13.777c-.186.18-.41.39-.677.64l-4.769 4.45a1 1 0 0 0 1.365 1.462l4.817-4.495c.546-.51 1.03-.96 1.367-1.376.365-.449.664-.979.664-1.65 0-.672-.299-1.201-.664-1.65-.338-.415-.821-.866-1.367-1.376z"
+                  fill="#FFFFFF"
+                  fill-opacity="0.92"
+                ></path>
+              </svg>
+            </button>
+            <button
+              class="bg-black rounded-[16px] h-[54px] px-[16px] py-[12px] w-[130px] cursor-pointer"
+            >
+              Sign in
+            </button>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Hero section -->
+
+      <img
+        src="/Swiggy/src/assets/Swiggy_img/Veggies_new.avif"
+        alt=""
+        class="absolute left-0 top-30 w-[260px]"
+      />
+
+      <div class="flex flex-col items-center">
+        <div
+          class="text-white text-[48px] font-semibold leading-tight max-w-[800px] text-center mt-[130px] text-[48px] ml-[60px]"
+        >
+          Order food & groceries. Discover best restaurants. Swiggy it!
+        </div>
+
+        <div class="mt-[15px] flex">
+          <div
+            class="w-[307px] h-[60px] border border-white bg-white rounded-2xl flex relative justify-center items-center pl-[15px]"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 18 23"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10.115 21.8122C12.4772 19.4062 17.7886 13.4751 17.7886 8.78883C17.7886 3.79647 13.9976 0 9.00526 0C4.0129 0 0.210938 3.79647 0.210938 8.78883C0.210938 13.4755 5.52998 19.4073 7.89476 21.8129C8.51149 22.4403 9.49871 22.44 10.115 21.8122ZM8.99988 12.7888C11.4269 12.7888 13.3943 10.8214 13.3943 8.39441C13.3943 5.96745 11.4269 4 8.99988 4C6.57292 4 4.60547 5.96745 4.60547 8.39441C4.60547 10.8214 6.57292 12.7888 8.99988 12.7888Z"
+                fill="#FF5200"
+              ></path>
+            </svg>
+            <input
+              type="text"
+              placeholder="Enter your delivery location"
+              class="border border-white bg-white rounded-2xl pl-[10px] placeholder:text-md placeholder:font-bold w-[100%] focus:outline-none focus:border-transparent focus:right-0 h-full"
+            />
+          </div>
+          <div
+            class="w-[421px] h-[60px] border border-white bg-white rounded-2xl ml-[15px] pl-[10px] flex items-center justify-between"
+          >
+            <input
+              type="text"
+              placeholder="Search for restaurant, item or more"
+              class="w-full placeholder:font-bold placeholder:text-lg focus:outline-none focus:border-transparent focus:right-0 h-full"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+              width="20"
+              height="20"
+              class="mr-[15px]"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-4.35-4.35M10 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="/Swiggy/src/assets/Swiggy_img/Sushi_replace.avif"
+        alt=""
+        class="absolute right-0 top-30 w-[260px]"
+      />
+
+      <!-- cards -->
+      <div class="w-full mt-[20px]">
+        <div class="flex mx-[105px] justify-center">
+          <img
+            src="/Swiggy/src/assets/Swiggy_img/ec86a309-9b06-48e2-9adc-35753f06bc0a_Food3BU.avif"
+            alt=""
+            class="min-h-[312px] min-w-[330px] lg:w-[380px] cursor-pointer"
+          />
+          <img
+            src="/Swiggy/src/assets/Swiggy_img/b5c57bbf-df54-4dad-95d1-62e3a7a8424d_IM3BU.avif"
+            alt=""
+            class="min-h-[300px] min-w-[330px] lg:w-[380px] cursor-pointer"
+          />
+          <img
+            src="/Swiggy/src/assets/Swiggy_img/b6d9b7ab-91c7-4f72-9bf2-fcd4ceec3537_DO3BU.avif"
+            alt=""
+            class="min-h-[300px] min-w-[330px] lg:w-[380px] cursor-pointer"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- second page -->
+
+    <div class="w-full bg-white">
+      <div class="mt-[100px] mx-[105px]">
+        <h3 class="font-bold text-2xl">Order our best food options</h3>
+        <div>
+          <div
+            class="flex cursor-pointer overflow-x-auto gap-13 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+          >
+            <img
+              src="/Swiggy/src/assets/Swiggy_img/Biryani.avif"
+              alt=""
+              class="min-w-[150px] h-[180px]"
+            />
+            <img
+              src="/Swiggy/src/assets/Swiggy_img/Cake.avif"
+              alt=""
+              class="min-w-[144px] h-[180px]"
+            />
+            <img
+              src="/Swiggy/src/assets/Swiggy_img/Pizza.avif"
+              alt=""
+              class="min-w-[150px] h-[180px]"
+            />
+            <img
+              src="/Swiggy/src/assets/Swiggy_img/Burger.avif"
+              alt=""
+              class="min-w-[150px] h-[180px]"
+            />
+            <img
+              src="/Swiggy/src/assets/Swiggy_img/Shawarma.avif"
+              alt=""
+              class="min-w-[150px] h-[180px]"
+            />
+            <img
+              src="/Swiggy/src/assets/Swiggy_img/Parotta.avif"
+              alt=""
+              class="min-w-[150px] h-[180px]"
+            />
+            <img
+              src="/Swiggy/src/assets/Swiggy_img/Idli.avif"
+              alt=""
+              class="min-w-[150px] h-[180px]"
+            />
+          </div>
+          <div
+            class="flex cursor-pointer overflow-x-auto gap-13 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+          >
+            <img
+              src="/Swiggy/src/assets/Swiggy_img/Rolls.avif"
+              alt=""
+              class="min-w-[150px] h-[180px]"
+            />
+            <img
+              src="/Swiggy/src/assets/Swiggy_img/Samosa.avif"
+              alt=""
+              class="min-w-[150px] h-[180px]"
+            />
+            <img
+              src="/Swiggy/src/assets/Swiggy_img/Vada.avif"
+              alt=""
+              class="min-w-[150px] h-[180px]"
+            />
+            <img
+              src="/Swiggy/src/assets/Swiggy_img/Pastry.avif"
+              alt=""
+              class="min-w-[150px] h-[180px]"
+            />
+            <img
+              src="/Swiggy/src/assets/Swiggy_img/Noodles.avif"
+              alt=""
+              class="min-w-[150px] h-[180px]"
+            />
+            <img
+              src="/Swiggy/src/assets/Swiggy_img/Poori.avif"
+              alt=""
+              class="min-w-[150px] h-[180px]"
+            />
+            <img
+              src="/Swiggy/src/assets/Swiggy_img/Juice.avif"
+              alt=""
+              class="min-w-[150px] h-[180px]"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third page -->
+
+    <div class="w-full bg-white">
+      <div class="mt-[100px] mx-[105px]">
+        <h3 class="font-bold text-2xl">Shop groceries on Instamart</h3>
+        <div class="mt-[30px]">
+          <div
+            class="flex overflow-x-auto gap-14 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+          >
+            <div
+              class="min-w-[144px] h-[180px] flex flex-col items-center h-full font-semibold text-lg"
+            >
+              <img
+                src="/Swiggy/src/assets/Swiggy_img/43e3c412-4ca9-4894-82ba-24b69da80aa6_06c0d2a9-804c-4bf1-8725-7ebd234e144a.avif"
+                alt=""
+                class=""
+              />
+              <span class="mt-[10px]">Fresh</span>
+              <span>Vegetables</span>
+            </div>
+            <div
+              class="min-w-[144px] h-[180px] flex flex-col items-center h-full font-semibold text-lg"
+            >
+              <img
+                src="/Swiggy/src/assets/Swiggy_img/a1493d81-f21e-415f-9875-f78383590fc2_9f3f0f68-4fbe-40f6-8f5d-5472a03469bd.avif"
+                alt=""
+                class=""
+              />
+              <span class="mt-[10px]">Fresh Fruits</span>
+            </div>
+            <div
+              class="min-w-[144px] h-[180px] flex flex-col items-center h-full font-semibold text-lg"
+            >
+              <img
+                src="/Swiggy/src/assets/Swiggy_img/6dea6676-ce07-45e6-b60c-a099c01c5462_6d33297a-5828-48ff-aa2a-c052ae97669e.avif"
+                alt=""
+                class=""
+              />
+              <span class="mt-[10px]">Dairy,Bread</span>
+              <span>and Eggs</span>
+            </div>
+            <div
+              class="min-w-[144px] h-[180px] flex flex-col items-center h-full font-semibold text-lg"
+            >
+              <img
+                src="/Swiggy/src/assets/Swiggy_img/097900ca-5d2d-4bb0-8e54-aede1e58dfd8_eab3796c-ac17-48fd-bfc7-6356c6f89783.avif"
+                alt=""
+                class=""
+              />
+              <span class="mt-[10px]">Rice,Atta and</span>
+              <span>Dals</span>
+            </div>
+            <div
+              class="min-w-[144px] h-[180px] flex flex-col items-center h-full font-semibold text-lg"
+            >
+              <img
+                src="/Swiggy/src/assets/Swiggy_img/64714677-e6b6-41c1-b533-6644d43e55f7_76ef86af-0483-41a5-8387-37901bf4ca6a.avif"
+                alt=""
+                class=""
+              />
+              <span class="mt-[10px]">Masalas and</span>
+              <span>Dry Fruits</span>
+            </div>
+            <div
+              class="min-w-[144px] h-[180px] flex flex-col items-center h-full font-semibold text-lg"
+            >
+              <img
+                src="/Swiggy/src/assets/Swiggy_img/8e48ee13-3b51-49ea-b765-5cf3e7a97c04_695caa8a-c2f6-4a1a-9672-53213fea21aa.avif"
+                alt=""
+                class=""
+              />
+              <span class="mt-[10px]">Oils and Ghee</span>
+            </div>
+            <div
+              class="min-w-[144px] h-[180px] flex flex-col items-center h-full font-semibold text-lg"
+            >
+              <img
+                src="/Swiggy/src/assets/Swiggy_img/73e018a7-d342-475e-aaca-ec5cd3d0c59f_228ff3d4-ff21-44db-9768-7a369c65ce6a.avif"
+                alt=""
+                class=""
+              />
+              <span class="mt-[10px]">Munchies</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fourth page -->
+
+    <div class="w-full bg-white h-[466px]">
+      <div class="mt-[100px] mx-[105px]">
+        <h3 class="font-bold text-2xl">Discover best restaurants on Dineout</h3>
+        <div class="mt-[30px]">
+          <div
+            class="flex gap-14 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] overflow-x-auto h-[466px]"
+          >
+            <!-- 1st card -->
+            <div
+              class="min-w-[330px] flex flex-col items-center font-semibold text-lg relative h-[300px] cursor-pointer"
+            >
+              <img
+                src="/Swiggy/src/assets/Swiggy_img/a2c57902-a401-43d1-abf0-28402abd38d8_image13192c2ad0a6e4ff9a00aaa9f052cdd33.jpg"
+                alt=""
+                class="w-full max-h-[200px] rounded-t-2xl object-cover"
+              />
+              <div
+                class="w-full absolute bottom-0 transform translate-y-30 h-full"
+              >
+                <div
+                  class="flex items-center justify-between gap-[12px] font-extrabold text-white bg-linear-to-t from-black w-full h-[50px] px-[10px]"
+                >
+                  <span class="max-w-[90%] text-[20px]"
+                    >Saratha's Aahaaram
+                  </span>
+                  <div class="flex gap-[3px] items-center text-sm">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-[18px]"
+                    >
+                      <!-- Green circle -->
+                      <circle cx="12" cy="12" r="12" fill="#1E943C" />
+
+                      <!-- White star -->
+                      <path
+                        d="M12 3.5
+       L14.6 9
+       L20.6 9.2
+       L15.8 13
+       L17.6 19
+       L12 15.6
+       L6.4 19
+       L8.2 13
+       L3.4 9.2
+       L9.4 9
+       Z"
+                        fill="#FFFFFF"
+                      />
+                    </svg>
+                    <span class="">3.7</span>
+                  </div>
+                </div>
+
+                <div
+                  class="w-full bg-white rounded-b-2xl border border-[#e9e9eb] shadow-[0_1px_4px_rgba(0,0,0,0.08)] pt-[15px] px-[10px] h-[200px]"
+                >
+                  <div class="font-light text-[13px]">
+                    <div class="flex justify-between">
+                      <div>South Indian . Indian Cuisine</div>
+                      <div>₹400 for two</div>
+                    </div>
+
+                    <div class="flex justify-between pt-[10px]">
+                      <div>Peelamedu,Coimbatore</div>
+                      <div>7.3 km</div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="bg-[#C8F9E5] rounded-lg text-[#1BA672] mx-[10px] font-extralight text-[17px] min-h-[35px] pl-[10px] flex items-center mt-[50px]"
+                  >
+                    <span>Up to 10% off with bank offers</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2nd card -->
+            <div
+              class="min-w-[355px] flex flex-col items-center font-semibold text-lg relative h-[300px] cursor-pointer"
+            >
+              <img
+                src="/Swiggy/src/assets/Swiggy_img/4c01b51b-d21e-4806-8650-6baa25353b12_202407151548199be591d0a86842cf8527bfeca60dc573.jpg"
+                alt=""
+                class="w-full max-h-[200px] rounded-t-2xl object-cover"
+              />
+              <div
+                class="w-full absolute bottom-0 transform translate-y-30 h-full"
+              >
+                <div
+                  class="flex items-center justify-between gap-[12px] font-extrabold text-white bg-linear-to-t from-black w-full h-[50px] px-[10px]"
+                >
+                  <span class="max-w-[90%] text-[20px]"
+                    >Snackers Republic
+                  </span>
+                  <div class="flex gap-[3px] items-center text-sm">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-[18px]"
+                    >
+                      <!-- Green circle -->
+                      <circle cx="12" cy="12" r="12" fill="#1E943C" />
+
+                      <!-- White star -->
+                      <path
+                        d="M12 3.5
+       L14.6 9
+       L20.6 9.2
+       L15.8 13
+       L17.6 19
+       L12 15.6
+       L6.4 19
+       L8.2 13
+       L3.4 9.2
+       L9.4 9
+       Z"
+                        fill="#FFFFFF"
+                      />
+                    </svg>
+                    <span class="">3.9</span>
+                  </div>
+                </div>
+
+                <div
+                  class="w-full bg-white rounded-b-2xl border border-[#e9e9eb] shadow-[0_1px_4px_rgba(0,0,0,0.08)] pt-[15px] px-[10px] h-[200px]"
+                >
+                  <div class="font-light text-[13px]">
+                    <div class="flex justify-between">
+                      <div>Middle Eastern . Afghan</div>
+                      <div>₹1500 for two</div>
+                    </div>
+
+                    <div class="flex justify-between pt-[10px]">
+                      <div>Gopalapuram,Coimbatore</div>
+                      <div>0.5 km</div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="bg-[#1BA672] rounded-lg text-white mx-[10px] font-extralight text-[17px] min-h-[35px] pl-[10px] flex min-w-[311px] mt-[30px]"
+                  >
+                    <div
+                      class="flex text-[13px] font-extrabold justify-between w-full items-center"
+                    >
+                      <div class="flex items-center">
+                        <img
+                          src="/Swiggy/src/assets/Swiggy_img/OFFER.png"
+                          alt=""
+                          class="w-[20px]"
+                        />
+
+                        <span class="pl-[5px]"
+                          >Flat 30% off on pre-booking</span
+                        >
+                      </div>
+                      <span class="pr-[8px]">+2 more</span>
+                    </div>
+                  </div>
+
+                  <div
+                    class="bg-[#C8F9E5] rounded-lg text-[#1BA672] mx-[10px] font-extralight text-[17px] min-h-[35px] pl-[10px] flex items-center mt-[20px] min-w-[311px]"
+                  >
+                    <span>Up to 10% off with bank offers</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3rd card -->
+            <div
+              class="min-w-[355px] flex flex-col items-center font-semibold text-lg relative h-[300px] cursor-pointer"
+            >
+              <img
+                src="/Swiggy/src/assets/Swiggy_img/21d991488658e32415f851a12b72aa44.jpg"
+                alt=""
+                class="w-full max-h-[200px] rounded-t-2xl object-cover"
+              />
+              <div
+                class="w-full absolute bottom-0 transform translate-y-30 h-full"
+              >
+                <div
+                  class="flex items-center justify-between gap-[12px] font-extrabold text-white bg-linear-to-t from-black w-full h-[50px] px-[10px]"
+                >
+                  <span class="max-w-[90%] text-[20px]"
+                    >Elevate Bar & Lounge
+                  </span>
+                  <div class="flex gap-[3px] items-center text-sm">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-[18px]"
+                    >
+                      <!-- Green circle -->
+                      <circle cx="12" cy="12" r="12" fill="#1E943C" />
+
+                      <!-- White star -->
+                      <path
+                        d="M12 3.5
+       L14.6 9
+       L20.6 9.2
+       L15.8 13
+       L17.6 19
+       L12 15.6
+       L6.4 19
+       L8.2 13
+       L3.4 9.2
+       L9.4 9
+       Z"
+                        fill="#FFFFFF"
+                      />
+                    </svg>
+                    <span class="">4.7</span>
+                  </div>
+                </div>
+
+                <div
+                  class="w-full bg-white rounded-b-2xl border border-[#e9e9eb] shadow-[0_1px_4px_rgba(0,0,0,0.08)] pt-[15px] px-[10px] h-[200px]"
+                >
+                  <div class="font-light text-[13px]">
+                    <div class="flex justify-between">
+                      <div>North Indian . North Indian</div>
+                      <div>₹2000 for two</div>
+                    </div>
+
+                    <div class="flex justify-between pt-[10px]">
+                      <div>Ram Nagar,Coimbatore</div>
+                      <div>1.1 km</div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="bg-[#1BA672] rounded-lg text-white mx-[10px] font-extralight text-[17px] min-h-[35px] pl-[10px] flex min-w-[311px] mt-[30px]"
+                  >
+                    <div
+                      class="flex text-[13px] font-extrabold justify-between w-full items-center"
+                    >
+                      <div class="flex items-center">
+                        <img
+                          src="/Swiggy/src/assets/Swiggy_img/OFFER.png"
+                          alt=""
+                          class="w-[20px]"
+                        />
+
+                        <span class="pl-[5px]"
+                          >Flat 15% off on pre-booking</span
+                        >
+                      </div>
+                      <span class="pr-[8px]">+2 more</span>
+                    </div>
+                  </div>
+
+                  <div
+                    class="bg-[#C8F9E5] rounded-lg text-[#1BA672] mx-[10px] font-extralight text-[17px] min-h-[35px] pl-[10px] flex items-center mt-[20px] min-w-[311px]"
+                  >
+                    <span>Up to 10% off with bank offers</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4th card -->
+            <div
+              class="min-w-[355px] flex flex-col items-center font-semibold text-lg relative h-[300px] cursor-pointer"
+            >
+              <img
+                src="/Swiggy/src/assets/Swiggy_img/1c452004adcb5a93eab7aeae78db3453.jpg"
+                alt=""
+                class="w-full max-h-[200px] rounded-t-2xl object-cover"
+              />
+              <div
+                class="w-full absolute bottom-0 transform translate-y-30 h-full"
+              >
+                <div
+                  class="flex items-center justify-between gap-[12px] font-extrabold text-white bg-linear-to-t from-black w-full h-[50px] px-[10px]"
+                >
+                  <span class="max-w-[90%] text-[20px]"
+                    >9 Hills - VAP Club</span
+                  >
+                  <div class="flex gap-[3px] items-center text-sm">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-[18px]"
+                    >
+                      <!-- Green circle -->
+                      <circle cx="12" cy="12" r="12" fill="#1E943C" />
+
+                      <!-- White star -->
+                      <path
+                        d="M12 3.5
+       L14.6 9
+       L20.6 9.2
+       L15.8 13
+       L17.6 19
+       L12 15.6
+       L6.4 19
+       L8.2 13
+       L3.4 9.2
+       L9.4 9
+       Z"
+                        fill="#FFFFFF"
+                      />
+                    </svg>
+                    <span class="">4.3</span>
+                  </div>
+                </div>
+
+                <div
+                  class="w-full bg-white rounded-b-2xl border border-[#e9e9eb] shadow-[0_1px_4px_rgba(0,0,0,0.08)] pt-[15px] px-[10px] h-[200px]"
+                >
+                  <div class="font-light text-[13px]">
+                    <div class="flex justify-between">
+                      <div>North Indian . North Indian</div>
+                      <div>₹1000 for two</div>
+                    </div>
+
+                    <div class="flex justify-between pt-[10px]">
+                      <div>PN Palayam,Coimbatore</div>
+                      <div>1.8 km</div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="bg-[#1BA672] rounded-lg text-white mx-[10px] font-extralight text-[17px] min-h-[35px] pl-[10px] flex min-w-[311px] mt-[30px]"
+                  >
+                    <div
+                      class="flex text-[13px] font-extrabold justify-between w-full items-center"
+                    >
+                      <div class="flex items-center">
+                        <img
+                          src="/Swiggy/src/assets/Swiggy_img/OFFER.png"
+                          alt=""
+                          class="w-[20px]"
+                        />
+
+                        <span class="pl-[5px]"
+                          >Flat 20% off on pre-booking</span
+                        >
+                      </div>
+                      <span class="pr-[8px]">+2 more</span>
+                    </div>
+                  </div>
+
+                  <div
+                    class="bg-[#C8F9E5] rounded-lg text-[#1BA672] mx-[10px] font-extralight text-[17px] min-h-[35px] pl-[10px] flex items-center mt-[20px] min-w-[311px]"
+                  >
+                    <span>Up to 10% off with bank offers</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Banner -->
+
+    <div class="w-full mt-[100px]">
+      <img
+        src="/Swiggy/src/assets/Swiggy_img/App_download_banner.avif"
+        alt=""
+        class="min-h-[236px]"
+      />
+    </div>
+
+    <!-- locations -->
+
+    <div class="w-full bg-white">
+      <div class="mt-[80px] mx-[105px]">
+        <div class="mx-[120px]">
+          <h3 class="font-bold text-2xl">Cities with food delivery</h3>
+
+          <!-- 1st row -->
+          <div class="flex gap-[20px] mt-[10px]">
+            <div
+              class="min-w-[200px] lg:w-[270px] min-h-[70px] bg-white rounded-xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.06)] text-[14px] font-bold text-[#414449] px-[20px] py-[10px] flex items-center justify-center text-center cursor-pointer"
+            >
+              <div>Order food online in Bangalore</div>
+            </div>
+
+            <div
+              class="min-w-[200px] lg:w-[270px] min-h-[70px] bg-white rounded-xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.06)] text-[14px] font-bold text-[#414449] px-[20px] py-[15px] flex items-center justify-center text-center cursor-pointer"
+            >
+              <div>Order food online in Gurgaon</div>
+            </div>
+
+            <div
+              class="min-w-[200px] lg:w-[270px] min-h-[70px] bg-white rounded-xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.06)] text-[14px] font-bold text-[#414449] px-[20px] py-[15px] flex items-center justify-center text-center cursor-pointer"
+            >
+              <div>Order food online in Hyderabad</div>
+            </div>
+
+            <div
+              class="min-w-[200px] lg:w-[270px] min-h-[70px] bg-white rounded-xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.06)] text-[14px] font-bold text-[#414449] px-[20px] py-[15px] flex items-center justify-center text-center cursor-pointer"
+            >
+              <div>Order food online in Delhi</div>
+            </div>
+          </div>
+
+          <!-- 2nd row -->
+          <div class="flex gap-[20px] mt-[20px]">
+            <div
+              class="min-w-[200px] lg:w-[270px] min-h-[70px] bg-white rounded-xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.06)] text-[14px] font-bold text-[#414449] px-[20px] py-[10px] flex items-center justify-center text-center cursor-pointer"
+            >
+              <div>Order food online in Mumbai</div>
+            </div>
+
+            <div
+              class="min-w-[200px] lg:w-[270px] min-h-[70px] bg-white rounded-xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.06)] text-[14px] font-bold text-[#414449] px-[20px] py-[15px] flex items-center justify-center text-center cursor-pointer"
+            >
+              <div>Order food online in pune</div>
+            </div>
+
+            <div
+              class="min-w-[200px] lg:w-[270px] min-h-[70px] bg-white rounded-xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.06)] text-[14px] font-bold text-[#414449] px-[20px] py-[15px] flex items-center justify-center text-center cursor-pointer"
+            >
+              <div>Order food online in Kolkata</div>
+            </div>
+
+            <div
+              class="min-w-[200px] lg:w-[270px] min-h-[70px] bg-white rounded-xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.06)] text-[14px] font-bold text-[#414449] px-[20px] py-[15px] flex items-center justify-center text-center cursor-pointer"
+            >
+              <div>Order food online in Chennai</div>
+            </div>
+          </div>
+
+          <!-- 3rd row -->
+          <div class="flex gap-[20px] mt-[20px]">
+            <div
+              class="min-w-[200px] lg:w-[270px] min-h-[70px] bg-white rounded-xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.06)] text-[14px] font-bold text-[#414449] px-[20px] py-[10px] flex items-center justify-center text-center cursor-pointer"
+            >
+              <div>Order food online in Ahmedabad</div>
+            </div>
+
+            <div
+              class="min-w-[200px] lg:w-[270px] min-h-[70px] bg-white rounded-xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.06)] text-[14px] font-bold text-[#414449] px-[20px] py-[15px] flex items-center justify-center text-center cursor-pointer"
+            >
+              <div>Order food online in Chandigarh</div>
+            </div>
+
+            <div
+              class="min-w-[200px] lg:w-[270px] min-h-[70px] bg-white rounded-xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.06)] text-[14px] font-bold text-[#414449] px-[20px] py-[15px] flex items-center justify-center text-center cursor-pointer"
+            >
+              <div>Order food online in Jaipur</div>
+            </div>
+
+            <div
+              class="min-w-[200px] lg:w-[270px] min-h-[70px] bg-white rounded-xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.06)] text-[14px] font-bold text-[#414449] px-[20px] py-[15px] flex items-center text-center justify-center text-[#FF5200] cursor-pointer"
+            >
+              <div>Show More</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- grocery location -->
+
+    <div class="w-full bg-white">
+      <div class="mt-[80px] mx-[105px]">
+        <div class="mx-[120px]">
+          <h3 class="font-bold text-2xl">Cities with grocery delivery</h3>
+
+          <!-- 1st row -->
+          <div class="flex gap-[20px] mt-[10px]">
+            <div
+              class="min-w-[200px] lg:w-[270px] min-h-[70px] bg-white rounded-xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.06)] text-[14px] font-bold text-[#414449] px-[20px] py-[10px] flex items-center justify-center text-center cursor-pointer"
+            >
+              <div>Order food online in Bangalore</div>
+            </div>
+
+            <div
+              class="min-w-[200px] lg:w-[270px] min-h-[70px] bg-white rounded-xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.06)] text-[14px] font-bold text-[#414449] px-[20px] py-[15px] flex items-center justify-center text-center cursor-pointer"
+            >
+              <div>Order food online in Gurgaon</div>
+            </div>
+
+            <div
+              class="min-w-[200px] lg:w-[270px] min-h-[70px] bg-white rounded-xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.06)] text-[14px] font-bold text-[#414449] px-[20px] py-[15px] flex items-center justify-center text-center cursor-pointer"
+            >
+              <div>Order food online in Hyderabad</div>
+            </div>
+
+            <div
+              class="min-w-[200px] lg:w-[270px] min-h-[70px] bg-white rounded-xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.06)] text-[14px] font-bold text-[#414449] px-[20px] py-[15px] flex items-center justify-center text-center cursor-pointer"
+            >
+              <div>Order food online in Delhi</div>
+            </div>
+          </div>
+
+          <!-- 2nd row -->
+          <div class="flex gap-[20px] mt-[20px]">
+            <div
+              class="min-w-[200px] lg:w-[270px] min-h-[70px] bg-white rounded-xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.06)] text-[14px] font-bold text-[#414449] px-[20px] py-[10px] flex items-center justify-center text-center cursor-pointer"
+            >
+              <div>Order food online in Mumbai</div>
+            </div>
+
+            <div
+              class="min-w-[200px] lg:w-[270px] min-h-[70px] bg-white rounded-xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.06)] text-[14px] font-bold text-[#414449] px-[20px] py-[15px] flex items-center justify-center text-center cursor-pointer"
+            >
+              <div>Order food online in pune</div>
+            </div>
+
+            <div
+              class="min-w-[200px] lg:w-[270px] min-h-[70px] bg-white rounded-xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.06)] text-[14px] font-bold text-[#414449] px-[20px] py-[15px] flex items-center justify-center text-center cursor-pointer"
+            >
+              <div>Order food online in Kolkata</div>
+            </div>
+
+            <div
+              class="min-w-[200px] lg:w-[270px] min-h-[70px] bg-white rounded-xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.06)] text-[14px] font-bold text-[#414449] px-[20px] py-[15px] flex items-center justify-center text-center cursor-pointer"
+            >
+              <div>Order food online in Chennai</div>
+            </div>
+          </div>
+
+          <!-- 3rd row -->
+          <div class="flex gap-[20px] mt-[20px]">
+            <div
+              class="min-w-[200px] lg:w-[270px] min-h-[70px] bg-white rounded-xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.06)] text-[14px] font-bold text-[#414449] px-[20px] py-[10px] flex items-center justify-center text-center cursor-pointer"
+            >
+              <div>Order food online in Ahmedabad</div>
+            </div>
+
+            <div
+              class="min-w-[200px] lg:w-[270px] min-h-[70px] bg-white rounded-xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.06)] text-[14px] font-bold text-[#414449] px-[20px] py-[15px] flex items-center justify-center text-center cursor-pointer"
+            >
+              <div>Order food online in Chandigarh</div>
+            </div>
+
+            <div
+              class="min-w-[200px] lg:w-[270px] min-h-[70px] bg-white rounded-xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.06)] text-[14px] font-bold text-[#414449] px-[20px] py-[15px] flex items-center justify-center text-center cursor-pointer"
+            >
+              <div>Order food online in Jaipur</div>
+            </div>
+
+            <div
+              class="min-w-[200px] lg:w-[270px] min-h-[70px] bg-white rounded-xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.06)] text-[14px] font-bold text-[#414449] px-[20px] py-[15px] flex items-center text-center justify-center text-[#FF5200] cursor-pointer"
+            >
+              <div>Show More</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="w-full bg-[#F0F0F5] h-[511px]">
+      <div
+        class="mx-[105px] mt-[80px] flex py-[50px] justify-center text-[#616469] text-[16px] font-medium"
+      >
+        <div>
+          <img src="/Swiggy/src/assets/Swiggy_img/Group.svg" alt="" />
+          <div>© 2025 Swiggy Limited</div>
+        </div>
+
+        <div class="flex flex-col ml-[150px]">
+          <span class="text-[18px] text-black font-bold">Company</span>
+          <span class="pt-[20px] cursor-pointer">About us</span>
+          <span class="pt-[20px] cursor-pointer">Swiggy Corporate</span>
+          <span class="pt-[20px] cursor-pointer">Careers</span>
+          <span class="pt-[20px] cursor-pointer">Team</span>
+          <span class="pt-[20px] cursor-pointer">Swiggy One</span>
+          <span class="pt-[20px] cursor-pointer">Swiggy Instamart</span>
+          <span class="pt-[20px] cursor-pointer">Swiggy Dineout</span>
+          <span class="pt-[20px] cursor-pointer">Minis</span>
+          <span class="pt-[20px] cursor-pointer">Pyng</span>
+        </div>
+
+        <div class="flex flex-col justify-between h-[380px]">
+          <div class="flex flex-col ml-[50px]">
+            <span class="text-[18px] text-black font-bold">Contact us</span>
+            <span class="pt-[20px] cursor-pointer">Help & Support</span>
+            <span class="pt-[20px] cursor-pointer">Partner With Us</span>
+            <span class="pt-[20px] cursor-pointer">Rate With Us</span>
+          </div>
+          <div class="flex flex-col ml-[50px]">
+            <span class="pt-[20px] text-[18px] text-black font-bold"
+              >Legal</span
+            >
+            <span class="pt-[20px] cursor-pointer">Terms &</span>
+            <span class="cursor-pointer">Conditions</span>
+            <span class="pt-[20px] cursor-pointer">Cookies Policy</span>
+            <span class="pt-[20px] cursor-pointer">Privacy Policy</span>
+          </div>
+        </div>
+
+        <div class="flex flex-col ml-[50px]">
+          <span class="text-[18px] text-black font-bold">Available in:</span>
+          <span class="pt-[20px] cursor-pointer">Bangalore</span>
+          <span class="pt-[20px] cursor-pointer">Gurgaon</span>
+          <span class="pt-[20px] cursor-pointer">Hyderabad</span>
+          <span class="pt-[20px] cursor-pointer">Delhi</span>
+          <span class="pt-[20px] cursor-pointer">Munbai</span>
+          <span class="pt-[20px] cursor-pointer">Pune</span>
+          <span
+            class="mt-[20px] rounded-lg border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.06)] h-[30px] w-[80px] text-[14px] flex items-center justify-center cursor-pointer"
+            >685 cities</span
+          >
+        </div>
+
+        <div class="flex flex-col ml-[50px] justify-between h-[280px]">
+          <div class="flex flex-col">
+            <span class="text-[18px] text-black font-bold">Life at Swiggy</span>
+            <span class="pt-[20px] cursor-pointer">Explore With Swiggy</span>
+            <span class="pt-[20px] cursor-pointer">Swiggy News</span>
+            <span class="pt-[20px] cursor-pointer">Snackables</span>
+          </div>
+
+          <div class="pt-[20px]">
+            <span class="text-[18px] text-black font-bold">Social Links</span>
+            <div class="flex pt-[20px] gap-[15px]">
+              <img
+                src="/Swiggy/src/assets/Swiggy_img/Linkedin.svg"
+                alt=""
+                class="cursor-pointer"
+              />
+              <img
+                src="/Swiggy/src/assets/Swiggy_img/icon-instagram.svg"
+                alt=""
+                class="cursor-pointer"
+              />
+              <img
+                src="/Swiggy/src/assets/Swiggy_img/icon-facebook.svg"
+                alt=""
+                class="cursor-pointer"
+              />
+              <img
+                src="/Swiggy/src/assets/Swiggy_img/icon-pinterest.svg"
+                alt=""
+                class="cursor-pointer"
+              />
+              <img
+                src="/Swiggy/src/assets/Swiggy_img/Twitter.svg"
+                alt=""
+                class="cursor-pointer"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- down footer -->
+
+    <div class="bg-[#F0F0F5] h-[160px]">
+      <div class="mx-[105px]">
+        <hr class="border-t border-black" />
+
+        <div class="flex justify-center items-center gap-[30px] mt-[35px]">
+          <div class="text-[21px] font-bold">
+            For better experience, download the Swiggy app now
+          </div>
+
+          <div class="flex gap-[20px]">
+            <img
+              src="/Swiggy/src/assets/Swiggy_img/icon-AppStore_lg30tv.avif"
+              alt=""
+              class="cursor-pointer transform hover:scale-105 transition duration-500"
+            />
+            <img
+              src="/Swiggy/src/assets/Swiggy_img/icon-GooglePlay_1_zixjxl.avif"
+              alt=""
+              class="cursor-pointer transform hover:scale-105 transition duration-500"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+

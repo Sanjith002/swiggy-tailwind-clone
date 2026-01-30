@@ -1,0 +1,7 @@
+@import "tailwindcss" ;
+
+@theme {
+    
+    --font-swiggy:  "Proxima Nova", Arial, "Helvetica Neue", sans-serif;
+}
+
