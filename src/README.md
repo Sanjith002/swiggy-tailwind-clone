@@ -1,43 +1,118 @@
-# 🍔 Swiggy Website Clone (HTML + Tailwind CSS)
+# 🍔 Swiggy UI Clone
 
-A **responsive Swiggy homepage clone** built using **HTML and Tailwind CSS**.  
-This project focuses on replicating the **layout, design, and responsiveness** of the original Swiggy website without using JavaScript.
-
----
-
-## ✨ Features
-
-- Responsive design for **desktop and mobile**  
-- **Tailwind CSS utility-first styling**  
-- Clean and modern UI similar to Swiggy  
-- Fully static with HTML + CSS only  
-- Structured layout with multiple sections like food categories, banners, and promotions  
+A responsive **Swiggy-inspired food delivery UI clone** built using **HTML** and **Tailwind CSS**.
+This project focuses on recreating the look and feel of Swiggy’s interface with modern styling and layout techniques.
 
 ---
 
-## 🛠️ Technologies Used
+## 🚀 Live Demo
 
-- HTML  
-- Tailwind CSS  
-
----
-
-## ▶️ How to Run the Project
-
-1. Clone the repository or download the ZIP file  
-2. Open the project folder  
-3. Open `index.html` in any web browser  
+https://swiggy-tailwind-clone.pages.dev/
 
 ---
 
-## 🎯 Purpose of This Project
+## 📸 Features
 
-- Practice **Tailwind CSS layout and styling**  
-- Improve **frontend design skills**  
-- Learn to **clone modern web interfaces**  
+* ✅ Fully responsive design
+* ✅ Modern UI using Tailwind CSS
+* ✅ Clean and structured layout
+* ✅ Swiggy-style homepage design
+* ✅ Optimized images and assets
 
 ---
 
-## 📁 Project Status
+## 🛠️ Tech Stack
 
-Completed ✅
+* **HTML5**
+* **Tailwind CSS**
+
+---
+
+## 📁 Project Structure
+
+```
+Swiggy/
+ └── src/
+      ├── index.html
+      ├── output.css
+      └── assets/
+           └── img/
+```
+
+---
+
+## ⚙️ Setup & Usage
+
+### 1. Clone the repository
+
+```
+git clone https://github.com/your-username/swiggy-clone.git
+```
+
+### 2. Navigate to project folder
+
+```
+cd swiggy-clone
+```
+
+### 3. Open in browser
+
+Simply open:
+
+```
+src/index.html
+```
+
+---
+
+## 🎨 Tailwind Build (Optional)
+
+If you want to rebuild Tailwind CSS:
+
+```
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+```
+
+---
+
+## 🌐 Deployment
+
+This is a static project, so you can deploy easily on:
+
+* Netlify
+* Vercel
+* GitHub Pages
+
+### Recommended Settings:
+
+* **Publish Directory:** `src`
+* **Build Command:** *(leave empty if CSS already built)*
+
+---
+
+## ⚠️ Important Notes
+
+* Use **relative paths** for images:
+
+  ```
+  ./assets/img/image.png
+  ```
+* Avoid absolute paths like `/src/assets/...`
+* Ensure file names are case-sensitive
+
+---
+
+## 🙌 Acknowledgement
+
+* UI inspired by **Swiggy**
+
+---
+
+## 📬 Contact
+
+**Sanjith**
+Feel free to connect or give feedback!
+
+---
+
+⭐ If you like this project, give it a star!
